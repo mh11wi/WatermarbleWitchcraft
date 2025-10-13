@@ -1,4 +1,4 @@
-import { act, render, screen, fireEvent } from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
 import App from 'src/App';
 
 async function renderApp() {

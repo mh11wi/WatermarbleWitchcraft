@@ -23,11 +23,6 @@ export default defineConfig({
     globals: true,
     environment: 'happy-dom',
     setupFiles: './tests/setup.js',
-    server: {
-      deps: {
-        inline: true,
-      },
-    },
 	pool: 'threads'
   },
   optimizeDeps: {
