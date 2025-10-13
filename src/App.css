@@ -1,0 +1,149 @@
+html {
+  transform: scale(1.0);
+  transform-origin: 0 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar { 
+  display: none;
+}
+
+html, body, #root, .App {
+  width: 100%;
+  width: 100dvw;
+  
+  height: 100%;
+  height: 100dvh;
+  
+  min-height: 100%;
+  min-height: 100dvh;
+  
+  max-height: 100%;
+  max-height: 100dvh;
+}
+
+.App {
+  overflow: hidden;
+}
+
+.Main {
+  grid-column-start: 2;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.shareOption {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.shareOption:hover:not(:active) {
+  opacity: 0.75;
+}
+
+.horizontal-ad {
+  width: 100%;
+  height: 90px;
+}
+
+.vertical-ad-left, .vertical-ad-right {
+  width: 100%; 
+  height: 100%;
+}
+
+@media (orientation: portrait) {
+  .Main {
+    width: 100%;
+    height: calc(100% - 90px);
+    min-height: calc(100% - 90px);
+    max-height: calc(100% - 90px);
+  }
+}
+
+/* Mobile - Portrait mode */
+@media (orientation: portrait) and (max-width: 600px) {
+  html {
+    transform: scale(0.7);
+  }
+  
+  body, #root, .App, 
+  .MuiDialog-root, .MuiDrawer-root, .MuiMenu-root, .MuiBackdrop-root,
+  .WatermarbleWitchcraft div.fc-consent-root, .WatermarbleWitchcraft div.fc-dialog-overlay {
+    width: 142.857% !important;
+    width: 142.857dvw !important;
+    
+    height: 142.857% !important;
+    height: 142.857dvh !important;
+    
+    min-height: 142.857% !important;
+    min-height: 142.857dvh !important;
+    
+    max-height: 142.857% !important;
+    max-height: 142.857dvh !important;
+  }
+}
+
+@media (orientation: landscape) {
+  .App {
+    display: grid;
+  }
+}
+
+/* Mobile - Landscape mode */
+@media (orientation: landscape) and (max-height: 600px) {
+  html {
+    transform: scale(0.7);
+  }
+  
+  body, #root, .App, 
+  .MuiDialog-root, .MuiDrawer-root, .MuiMenu-root, .MuiBackdrop-root,
+  .WatermarbleWitchcraft div.fc-consent-root, .WatermarbleWitchcraft div.fc-dialog-overlay {
+    width: 142.857% !important;
+    width: 142.857dvw !important;
+    
+    height: 142.857% !important;
+    height: 142.857dvh !important;
+    
+    min-height: 142.857% !important;
+    min-height: 142.857dvh !important;
+    
+    max-height: 142.857% !important;
+    max-height: 142.857dvh !important;
+  }
+  
+  .App {
+    grid-template: 100% / 20% 60% 20%;
+  }
+}
+
+/* Tablet - Landscape mode */
+@media (orientation: landscape) and (min-height: 600px) and (max-width: 1200px) {
+  .App {
+    grid-template: 100% / 17.5% 65% 17.5%;
+  }
+}
+
+/* Laptop */
+@media (orientation: landscape) and (min-height: 600px) and (min-width: 1200px) and (max-width: 1536px) {
+  .App {
+    grid-template: 100% / 20% 60% 20%;
+  }
+}
+
+/* Large monitor or tv */
+@media (orientation: landscape) and (min-height: 600px) and (min-width: 1536px) {
+  .App {
+    grid-template: 100% / 17.5% 65% 17.5%;
+  }
+}
+
+.MuiDialog-root, .MuiDialog-root * {
+  /* Font boosting fix */
+  max-height: 1000000px;
+}
