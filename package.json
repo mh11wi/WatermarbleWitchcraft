@@ -8,16 +8,19 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@fontsource/cinzel-decorative": "^4.5.10",
     "@fontsource/roboto": "^4.5.8",
-    "@mui/icons-material": "^5.10.16",
-    "@mui/material": "^5.10.15",
-    "@mui/x-charts": "^6.18.1",
+    "@mui/icons-material": "^7.0.0",
+    "@mui/material": "^7.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^15.0.5",
     "@testing-library/user-event": "^13.5.0",
+    "html2canvas": "^1.4.1",
+    "mui-color-input": "^7.0.0",
     "react": "^18.2.0",
     "react-adsense": "^0.1.0",
     "react-dom": "^18.2.0",
+    "react-draggable": "^4.5.0",
     "react-share": "^4.4.1"
   },
   "devDependencies": {

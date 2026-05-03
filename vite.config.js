@@ -3,6 +3,14 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   base: "https://mh11wi.github.io/WatermarbleWitchcraft/",
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        embed: 'embed.html'
+      }
+    }
+  },
   plugins: [
     {
       name: 'treat-js-files-as-jsx',
@@ -39,6 +47,7 @@ export default defineConfig({
       components: '/src/components',
       helpers: '/src/helpers',
       hooks: '/src/hooks',
+      assets: '/src/assets'
     },
   },
 })

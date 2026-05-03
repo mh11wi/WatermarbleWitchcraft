@@ -22,3 +22,7 @@ export function getPageScale() {
   const matrixArray = matrix.replace("matrix(", "").split(",");
   return parseFloat(matrixArray[0]);
 }
+
+export function pluck(array, key) {
+  return [...new Set(array.map(o => o[key].length > 0 ? o[key] : null))].sort();
+}
